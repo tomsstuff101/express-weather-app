@@ -5,14 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/icons/weather-icons.css">
+    <link rel="stylesheet" href="./css/icons/weather-icons-wind.css">
+    <script src="https://kit.fontawesome.com/0f7608553d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1 id="title" >Weather app front end</h1>
 
-        <p id="summary"></p>
-        <h4 id="temp"></h4>
-        <input id="location" type="text">
-        <button id="fetchWeather">Get the weather</button>
+    <div id="mainWrapper">
+    
+        <h1 id="title" >Whats the weather?</h1>
+
+        <div id="getInfoWrapper">
+            <input id="getLocation" type="text" placeholder="e.g. sydney">
+        </div>
+
+
+        <div class="messages">
+
+            <div id="loading"></div>
+
+            <div class="miniStuff">
+                    <p id="summary"></p>
+                    <h4 id="temp"></h4>
+            </div>
+
+            <div id="iconDisplay">
+
+            </div>
+            <p id="placeFound"></p>
+
+            <button id="fetchWeather" ><i class="fas fa-wind"></i></button>
+
+        </div>
+
+    </div>
 
     <script src="./index.js"></script>
 </body>

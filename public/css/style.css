@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+
+html, body {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+body {
+    font-family: 'Fredoka One', cursive;
+    background-color: rgb(114, 69, 221);
+    
+}
+
+#title {
+    font-size: 32px;
+    opacity: 0.7;
+    margin-left:20%;
+    margin-right: 20%;
+
+}
+
+
+#mainWrapper{
+    text-align: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 10vh;
+}
+
+
+#getInfoWrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 5% 20% 5% 20%;
+}
+
+#getLocation{
+    outline: none;
+    border: 3px solid rgb(73, 45, 138);
+    color: rgb(114, 69, 221);
+    font-size: 1.5em;
+}
+
+
+#getLocation::placeholder{
+    color: rgba(0, 0, 0, 0.762);
+}
+
+#fetchWeather{
+    position: fixed;
+    margin-top: 10%;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: medium;
+    border-radius: 50%;
+    border: 3px solid rgb(135, 137, 174);
+    width: 4em;
+    height: 4em;
+    left: 70vw;
+    bottom: 10vh;
+}
+
+#fetchWeather i{
+    transform: scale(2.5);
+}
+
+.mesages{
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+
+.miniStuff{
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: row; */
+    /* justify-content: space-evenly; */
+}
+
+#summary, #temp{
+    margin: 0;
+    padding: 0;
+}
+
+
+#summary{
+    /* position: relative; */
+    /* top: 0.5em; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    font-size: 1.5em;
+    /* line-height: 1.3em; */
+}
+
+
+#iconDisplay{
+    font-size: 8em;
+}
+
+
+#loading{
+    font-size: 40vw;
+    color: darkblue;
+    animation-name: spinner;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spinner {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
+
+
+
+
+
+
+#temp{
+font-size: 5em;
+}
+
+
+#placeFound{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 50vw;
+    text-align: left;
+    bottom: 10vh;
+    left: 7vh;
+    color: #ccc;
+}
