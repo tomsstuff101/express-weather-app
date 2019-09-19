@@ -11,12 +11,12 @@ const app = express()
 app.use(express.static(path.join(__dirname, "public")))
 
 
-// app.get('weather ...)
-app.get('/weather' , (req,res) =>{
-res.send('weather')
-console.log(`req.query  ${req.query.name}`)
-const str = req.query.name
-console.log(`sdlgfds  ${str}`)
+// make sure you await for the info from the api's 
+// before sending the data to the client
+app.get ('/weather' , async (req,res) =>{
+
+    let data = await main(req.query.location)
+    res.send(data)
 })
 
 
