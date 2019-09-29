@@ -1,11 +1,7 @@
 # Express Weather App
 
 
-
-<a href="">
 <img src="https://github.com/tomsstuff101/express-weather-app/blob/master/README-images/express%20weather.png?raw=true">
-</a>
-
 
 
 ```
