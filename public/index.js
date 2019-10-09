@@ -16,7 +16,8 @@ fetchWeather.addEventListener('click', async ()=>{
     loading.innerHTML = '<i class="fas fa-spinner"></i>'
     temp.textContent = ""
 
-    let responce = await fetch(`http://localhost:3001/weather?location=${getLocation.value}`)
+    // let responce = await fetch(`http://localhost:3001/weather?location=${getLocation.value}`)
+    let responce = await fetch(`/weather?location=${getLocation.value}`)
     let data = await responce.json()
 
     loading.innerHTML = ""

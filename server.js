@@ -2,6 +2,7 @@
 const express = require('express')
 const path = require('path')
 const {main} = require('./lib/app')
+const port = process.env.PORT || 3001
 
 
 const app = express()
@@ -20,7 +21,7 @@ app.get ('/weather' , async (req,res) =>{
 })
 
 
-app.listen(3001, ()=>{
-    console.log('listen to 3001')
+app.listen(port, ()=>{
+    console.log(`listen to ${port}`)
 })
 
