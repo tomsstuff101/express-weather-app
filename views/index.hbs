@@ -1,0 +1,38 @@
+
+    <div id="mainWrapper">
+    
+        <h1 id="title" >Whats the weather?</h1>
+
+        {{!-- <div id="getInfoWrapper">
+        </div> --}}
+
+        <form action="/" method="post" class="inputFrom" id="getInfoWrapper">
+            <input id="getLocation" type="text" placeholder="e.g. sydney">
+            <button id="fetchWeather" type="submit" class="submitButton" ><i class="fas fa-wind"></i></button>
+        </form>
+
+
+
+<!-- ***********  Responce  ********** -->
+
+        <div class="messages">
+            {{!-- <div id="loading"></div> --}}
+
+            <div class="miniStuff">
+                    <p id="summary">{{weather.summary}}</p>
+                    <h4 id="temp">{{weather.temp}}</h4>
+            </div>
+
+            <div>
+                {{#each weather.place}}
+                <p id="placeFound">{{this}}</p>
+                {{/each}}
+            </div>
+
+
+            <div id="iconDisplay">{{weather.icon}}</div>
+
+            
+        </div>
+
+    </div>
